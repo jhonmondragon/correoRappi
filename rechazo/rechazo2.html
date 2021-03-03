@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>Aliado 2</title>
+    <style>
+        html{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            margin: 0;
+        }
+        .title{
+            width: 55%;
+            background-color: #ff4940;
+            font-family: 'PT Serif', serif;
+            color: white;
+            font-size: 30px;
+            border-radius: 30px;
+            box-shadow: 3px 4px 19px -6px rgba(0,0,0,0.75);
+        }
+        .main_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'PT Serif', serif;
+            font-weight: bold;
+        }
+        .img_big{
+            width: 700px;
+        }
+        .img_medium{
+            width: 55%;
+            height: 90%;
+            padding: 10px;
+        }
+        .img_small{
+            width: 200px;
+            padding: 10px;
+        }
+        .info_container{
+            display: flex;
+            width: 90%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .align_left{
+            width: 55%;
+            display: flex;
+            text-align: start;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .align_right{
+            width: 55%;
+            display: flex;
+            text-align: end;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row-reverse;
+            color: #ff4940;
+        }
+        .margin_bot{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_container">
+        <div class="info_container">
+            <h1 class="title">!!Hola!!, {{113271174__client_name}}</h1>
+            <div class="align_left margin_bot">
+                <img src="../img/error.png" alt="" class="img_small">
+                <p>
+                    La sesion fotografica, referente a tu aliado {{113271174__additional_field_19}} <br>
+                    ha sido cancelada por el aliado con codigo de agendamiento: {{113271174__code}} <br>
+                    Motivo: {{113271174__additional_field_35}} <br>
+                    Fecha de cancelacion: {{113271174__additional_field_36}} <br>
+                    Hora de Cancelacion: {{113271174__additional_field_37}} <br>
+                </p>
+            </div>
+            <img src="https://scontent.feyp1-1.fna.fbcdn.net/v/t1.0-9/123644967_1691797097691400_1151049548503549165_n.png?_nc_cat=108&ccb=3&_nc_sid=e3f864&_nc_ohc=6TzxAL0SHHsAX-8AAAu&_nc_ht=scontent.feyp1-1.fna&oh=1b6544c4f3b984878710f18ed4e11b5f&oe=6063F343" alt="" class="img_medium">
+        </div>
+
+    </section>
+</body>
+</html>
