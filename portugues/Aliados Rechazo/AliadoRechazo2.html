@@ -20,6 +20,7 @@
             font-size: 30px;
             border-radius: 30px;
             box-shadow: 3px 4px 19px -6px rgba(0,0,0,0.75);
+            padding: 10px;
         }
         .main_container{
             display: flex;
@@ -29,9 +30,6 @@
             text-align: center;
             font-family: 'PT Serif', serif;
             font-weight: bold;
-        }
-        .img_big{
-            width: 700px;
         }
         .img_medium{
             width: 55%;
@@ -56,43 +54,36 @@
             align-items: center;
             justify-content: flex-start;
         }
-        .align_right{
-            width: 55%;
-            display: flex;
-            text-align: end;
-            align-items: center;
-            justify-content: flex-start;
-            flex-direction: row-reverse;
-            color: #ff4940;
-        }
         .margin_bot{
             margin-bottom: 20px;
         }
         a{
             text-decoration: none;
         }
+        p{
+            font-size: 18px;
+        }
     </style>
 </head>
 <body>
     <section class="main_container">
         <div class="info_container">
-            <h1 class="title">Hola, {{113271174__additional_field_19}}</h1>
+            <h1 class="title">Olá, {{113271174__additional_field_19}}</h1><!--Acá se modifica el titulo-->
             <div class="align_left margin_bot">
-                <img src="../img/error.png" alt="" class="img_small">
-                <p>
-                    Hemos evidenciado que la sesion fotografica correspondiente a el
-                    aliado: {{113271174__additional_field_18}} ha sido CANCELADA. <br>
-                    Booking code:{{113271174__code}} <br>
+                <img src="https://i.postimg.cc/wTZ0PC85/error.png" alt="logo de una equis" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+                <p> <!--Dentro de la etiqueta <p> se modifica el texto-->
+                    Evidenciámos que a sessão fotográfica correspondente ao aliado: {{113271174__additional_field_18}} foi CANCELADO. <br>
+                    Código de reserva:{{113271174__code}} <br>
                     <br>
-                    <a href="https://drive.google.com/file/d/1QMaCNq7wL3LUzWoGUq-pAWGJbgaIBrSt/view?usp=sharing" target="_blank">De acuerdo a lo anterior, es necesario enviar las fotografias de tus productos,
-                    en el siguiente instructivo encontraras los estandares que las fotografias deben cumplir
-                    </a><br>
+                    <a href="https://drive.google.com/file/d/1QMaCNq7wL3LUzWoGUq-pAWGJbgaIBrSt/view?usp=sharing" target="_blank">DDe acordo com o acima exposto, é necessário enviar fotografias dos seus produtos, nas seguintes instruções encontrará as normas que as fotografias devem cumprir
+                    </a> <!--en la etiqueta a dentro de las comillas del href se puede modificar el link del hipervinculo-->
                     <br>
-                    Cualquier duda comunicate con tu comercial:
+                    <br>
+                    Qualquer dúvida contacte o seu representante de vendas:
                     {{113271174__client_email}}
                 </p>
             </div>
-            <img src="https://scontent.feyp1-1.fna.fbcdn.net/v/t1.0-9/123644967_1691797097691400_1151049548503549165_n.png?_nc_cat=108&ccb=3&_nc_sid=e3f864&_nc_ohc=6TzxAL0SHHsAX-8AAAu&_nc_ht=scontent.feyp1-1.fna&oh=1b6544c4f3b984878710f18ed4e11b5f&oe=6063F343" alt="" class="img_medium">
+            <img src="https://i.blogs.es/2b545d/rappi-1/1366_2000.jpg" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_medium"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
         </div>
 
     </section>

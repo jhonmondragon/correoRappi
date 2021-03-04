@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>aliado 1</title>
+    <style>
+        .title{
+            font-family: 'PT Serif', serif;
+            background-color: #ff4940;
+            color: #ffeef5;
+            width: 700px;
+            height: fit-content;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 3px 4px 19px -6px rgba(0,0,0,0.75);
+        }
+        .main_container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-family: 'PT Serif', serif;
+            font-weight: bold;
+        }
+        .main_container p{
+            font-size: 18px;
+            padding: 10px;
+            width: 750px;
+        }
+        .img_big{
+            width: 700px;
+        }
+        .img_small{
+            width: 400px;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_container">
+        <div class="info_container">
+            <h1 class="title">Luzes, câmara, acção, esta é a informação da sua sessão.:</h1> <!--Acá se modifica el titulo-->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png" alt="Logo de Rappi" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+            <!--Dentro de la etiqueta <p> se modifica el texto-->
+            <p>
+                O seu estabelecimento: {{113175584__additional_field_18}} <br>
+                Onde se realizará a sessão: {{113175584__additional_field_21}} <br>
+                Data da Sessão: {{113175584__start_date_time}} <br>
+                # de fotos a tirar: {{113175584__event_name}} <br>
+                Tempo máximo de sessão: {{113175584__event_duration}} minutos. <br>
+                Código do horário: {{113175584__code}} <br>
+            </p>
+            <p>
+                Se tiver alguma notícia, por favor contacte o seu representante comercial: <br>
+                {{113175584__client_email}} <br>
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/1l9lVrKkF7zbyh8UO4HAN2h28FJcqUK9i/view?usp=sharing" target="_blank">Este instrutivo tem informações adicionais sobre como devemos ter as nossas placas</a> <br>
+                <!--en la etiqueta a dentro de las comillas del href se puede modificar el link del hipervinculo-->
+                <br>
+                <br>
+                Lembre-se:<br>
+                Se desejar cancelar, deve fazê-lo com pelo menos 48 horas de antecedência.<br>
+                O trabalho de equipa é essencial, não deve demorar mais de 15 minutos entre um prato e outro a ser fotografado.<br>
+                Caso contrário, a sessão será cancelada e não poderá ser reprogramada.<br>
+            </p>
+            <img src="https://i.blogs.es/2b545d/rappi-1/1366_2000.jpg" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_big"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+        </div>
+
+    </section>
+</body>
+</html>
