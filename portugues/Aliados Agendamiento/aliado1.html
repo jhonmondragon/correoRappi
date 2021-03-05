@@ -38,6 +38,13 @@
         }
         a{
             text-decoration: none;
+            color: #5e00be;
+        }
+        .principal{
+            text-align: start;
+        }
+        .highlighted{
+            color: #5e00be;
         }
     </style>
 </head>
@@ -47,13 +54,13 @@
             <h1 class="title">Luzes, câmara, acção, esta é a informação da sua sessão.:</h1> <!--Acá se modifica el titulo-->
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png" alt="Logo de Rappi" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
             <!--Dentro de la etiqueta <p> se modifica el texto-->
-            <p>
-                O seu estabelecimento: {{113175584__additional_field_18}} <br>
-                Onde se realizará a sessão: {{113175584__additional_field_21}} <br>
-                Data da Sessão: {{113175584__start_date_time}} <br>
-                # de fotos a tirar: {{113175584__event_name}} <br>
-                Tempo máximo de sessão: {{113175584__event_duration}} minutos. <br>
-                Código do horário: {{113175584__code}} <br>
+            <p class="principal">
+                <span class="highlighted">O seu estabelecimento:</span> {{113175584__additional_field_18}} <br>
+                <span class="highlighted">Onde se realizará a sessão:</span> {{113175584__additional_field_21}} <br>
+                <span class="highlighted">Data da Sessão:</span> {{113175584__start_date_time}} <br>
+                <span class="highlighted"># de fotos a tirar:</span> {{113175584__event_name}} <br>
+                <span class="highlighted">Tempo máximo de sessão:</span> {{113175584__event_duration}} minutos. <br>
+                <span class="highlighted">Código do horário:</span> {{113175584__code}} <br>
             </p>
             <p>
                 Se tiver alguma notícia, por favor contacte o seu representante comercial: <br>

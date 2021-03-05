@@ -25,6 +25,7 @@
             font-weight: bold;
         }
         .main_container p{
+            color: black;
             font-size: 18px;
             padding: 10px;
             width: 750px;
@@ -37,7 +38,13 @@
             padding: 10px;
         }
         a{
-            text-decoration: none;
+            color: #5e00be;
+        }
+        .principal{
+            text-align: start;
+        }
+        .highlighted{
+            color: #5e00be;
         }
     </style>
 </head>
@@ -47,13 +54,13 @@
             <h1 class="title">Luces, camara, accion, esta es la información de tu sesión:</h1> <!--Acá se modifica el titulo-->
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png" alt="Logo de Rappi" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
             <!--Dentro de la etiqueta <p> se modifica el texto-->
-            <p>
-                Tu establecimiento: {{113175584__additional_field_18}} <br>
-                Donde se realizará  la sesión: {{113175584__additional_field_21}} <br>
-                Fecha de la sesión: {{113175584__start_date_time}} <br>
-                # de fotos a tomar: {{113175584__event_name}} <br>
-                Tiempo maximo de la sesion: {{113175584__event_duration}} minutos. <br>
-                Codigo de agendamiento: {{113175584__code}} <br>
+            <p class="principal">
+                <span class="highlighted">Tu establecimiento:</span> {{113175584__additional_field_18}} <br>
+                <span class="highlighted">Donde se realizará  la sesión:</span> {{113175584__additional_field_21}} <br>
+                <span class="highlighted">Fecha de la sesión:</span>  Fecha<br>
+                <span class="highlighted"># de fotos a tomar:</span>  {{113175584__event_name}} <br>
+                <span class="highlighted">Tiempo maximo de la sesion:</span>  {{113175584__event_duration}} minutos. <br>
+                <span class="highlighted">Codigo de agendamiento:</span>  {{113175584__code}} <br>
             </p>
             <p>
                 Cualquier novedad debes comunicarte con tu comercial: <br>
@@ -73,5 +80,7 @@
         </div>
 
     </section>
+
+    
 </body>
 </html>
