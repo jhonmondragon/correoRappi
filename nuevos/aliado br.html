@@ -25,6 +25,7 @@
             font-weight: bold;
         }
         .main_container p{
+            color: black;
             font-size: 18px;
             padding: 10px;
             width: 750px;
@@ -40,7 +41,7 @@
             text-decoration: none;
             padding: 10px;
             color: white;
-            font-size: 18px;
+            font-size: 20px;
         }
         .principal{
             text-align: start;
@@ -54,39 +55,34 @@
             border-radius: 100px;
             border: none;
         }
+        .highlighted_red{
+            color: #ff0000;
+        }
     </style>
 </head>
 <body>
     <section class="main_container">
         <div class="info_container">
-            <h1 class="title">Luzes, câmara, acção, esta é a informação da sua sessão.:</h1> <!--Acá se modifica el titulo-->
+            <h1 class="title">Olá, {{nombre prueba}} </h1> <!--Acá se modifica el titulo-->
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png" alt="Logo de Rappi" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
             <!--Dentro de la etiqueta <p> se modifica el texto-->
             <p class="principal">
-                <span class="highlighted">O seu estabelecimento:</span> {{113175584__additional_field_18}} <br>
-                <span class="highlighted">Onde se realizará a sessão:</span> {{113175584__additional_field_21}} <br>
-                <span class="highlighted">Data da Sessão:</span> {{113175584__start_date_time}} <br>
-                <span class="highlighted"># de fotos a tirar:</span> {{113175584__event_name}} <br>
-                <span class="highlighted">Tempo máximo de sessão:</span> {{113175584__event_duration}} minutos. <br>
-                <span class="highlighted">Código do horário:</span> {{113175584__code}} <br>
+                <span class="highlighted">Evidenciamos que a sessão fotográfica correspondente ao aliado:</span> {{113175584__additional_field_18}} tem sido <span class="highlighted_red">CANCELADO.</span> <br>
+                <span class="highlighted">Código de reserva:</span> {{113175584__additional_field_21}} <br>
+                <span class="highlighted">Data em que a sessão deveria ser realizada:</span>  {{113175584__event_name}} <br>
             </p>
             <p>
-                Se tiver alguma notícia, por favor contacte o seu representante comercial: <br>
-                {{113175584__client_email}} <br>
+                De acordo com o acima exposto, é necessário o envio de fotos de seus produtos.
                 <br>
                 <br>
-                <button ><a href="https://drive.google.com/drive/u/1/folders/1mm2qWnQmX4N0a6J7L4nbYtiuIOu3_p1b" target="_blank">Este instrutivo tem informações adicionais sobre como devemos ter as nossas placas</a></button> <br>
+                <button onclick=""><a href="https://drive.google.com/file/d/1IWxyrciqqrfiBaB0rO4jpj-xcrPd0N_w/view?usp=sharing" target="_blank">Clique aqui para ver as instruções para as normas que as fotografias devem cumprir.</a></button>
                 <!--en la etiqueta a dentro de las comillas del href se puede modificar el link del hipervinculo-->
                 <br>
                 <br>
-                Lembre-se:<br>
-                Se desejar cancelar, deve fazê-lo com pelo menos 48 horas de antecedência.<br>
-                O trabalho de equipa é essencial, não deve demorar mais de 15 minutos entre um prato e outro a ser fotografado.<br>
-                Caso contrário, a sessão será cancelada e não poderá ser reprogramada.<br>
+                <span class="highlighted">Qualquer dúvida, favor contatar seu representante de vendas:</span> {{113175584__additional_field_21}} <br>
             </p>
             <img src="https://i.blogs.es/2b545d/rappi-1/1366_2000.jpg" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_big"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
         </div>
-
     </section>
 </body>
 </html>

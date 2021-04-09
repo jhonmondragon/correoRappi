@@ -25,6 +25,7 @@
             font-weight: bold;
         }
         .main_container p{
+            color: black;
             font-size: 18px;
             padding: 10px;
             width: 750px;
@@ -40,7 +41,7 @@
             text-decoration: none;
             padding: 10px;
             color: white;
-            font-size: 18px;
+            font-size: 20px;
         }
         .principal{
             text-align: start;
@@ -54,39 +55,35 @@
             border-radius: 100px;
             border: none;
         }
+        .highlighted_red{
+            color: #ff0000;
+        }
     </style>
 </head>
 <body>
     <section class="main_container">
         <div class="info_container">
-            <h1 class="title">Luzes, câmara, acção, esta é a informação da sua sessão.:</h1> <!--Acá se modifica el titulo-->
+            <h1 class="title">Hola, {{nombre prueba}} </h1> <!--Acá se modifica el titulo-->
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Rappi_logo.svg/1200px-Rappi_logo.svg.png" alt="Logo de Rappi" class="img_small"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
             <!--Dentro de la etiqueta <p> se modifica el texto-->
             <p class="principal">
-                <span class="highlighted">O seu estabelecimento:</span> {{113175584__additional_field_18}} <br>
-                <span class="highlighted">Onde se realizará a sessão:</span> {{113175584__additional_field_21}} <br>
-                <span class="highlighted">Data da Sessão:</span> {{113175584__start_date_time}} <br>
-                <span class="highlighted"># de fotos a tirar:</span> {{113175584__event_name}} <br>
-                <span class="highlighted">Tempo máximo de sessão:</span> {{113175584__event_duration}} minutos. <br>
-                <span class="highlighted">Código do horário:</span> {{113175584__code}} <br>
+                <span class="highlighted">Hemos evidenciado que la sesion fotografica correspondiente a el
+                    aliado:</span> {{113175584__additional_field_18}} ha sido <span class="highlighted_red">CANCELADA.</span> <br>
+                <span class="highlighted">Booking code:</span> {{113175584__additional_field_21}} <br>
+                <span class="highlighted">Fecha cuando se iba a realizar la sesion:</span>  {{113175584__event_name}} <br>
             </p>
             <p>
-                Se tiver alguma notícia, por favor contacte o seu representante comercial: <br>
-                {{113175584__client_email}} <br>
+                De acuerdo a lo anterior, es necesario enviar las fotografias de tus productos,
                 <br>
                 <br>
-                <button ><a href="https://drive.google.com/drive/u/1/folders/1mm2qWnQmX4N0a6J7L4nbYtiuIOu3_p1b" target="_blank">Este instrutivo tem informações adicionais sobre como devemos ter as nossas placas</a></button> <br>
+                <button onclick=""><a href="https://drive.google.com/file/d/1l9lVrKkF7zbyh8UO4HAN2h28FJcqUK9i/view?usp=sharing" target="_blank">Haz click aquí para ver el instructivo los estandares que las fotografias deben cumplir</a></button>
                 <!--en la etiqueta a dentro de las comillas del href se puede modificar el link del hipervinculo-->
                 <br>
                 <br>
-                Lembre-se:<br>
-                Se desejar cancelar, deve fazê-lo com pelo menos 48 horas de antecedência.<br>
-                O trabalho de equipa é essencial, não deve demorar mais de 15 minutos entre um prato e outro a ser fotografado.<br>
-                Caso contrário, a sessão será cancelada e não poderá ser reprogramada.<br>
+                <span class="highlighted">Cualquier duda comunicate con tu comercial:</span> {{113175584__additional_field_21}} <br>
             </p>
-            <img src="https://i.blogs.es/2b545d/rappi-1/1366_2000.jpg" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_big"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+            <img src="https://scontent.feyp1-1.fna.fbcdn.net/v/t1.0-9/123644967_1691797097691400_1151049548503549165_n.png?_nc_cat=108&ccb=3&_nc_sid=e3f864&_nc_ohc=6TzxAL0SHHsAX-8AAAu&_nc_ht=scontent.feyp1-1.fna&oh=1b6544c4f3b984878710f18ed4e11b5f&oe=6063F343" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_big"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
         </div>
-
     </section>
 </body>
 </html>

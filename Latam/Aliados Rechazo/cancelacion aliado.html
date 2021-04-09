@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>Aliado Rechazo 2</title>
+    <style>
+        .main_container{
+            grid-template-columns: 33vw 33vw 33vw;
+            font-family: 'PT Serif', serif;
+            font-weight: bold;
+        }
+        .title{
+            background-color: #ff4940;
+            font-family: 'PT Serif', serif;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .info_container_data{
+            display: flex;
+        }
+        .img_medium{
+            padding: 10px;
+        }
+        .img_small{
+            width: 200px;
+            height: 200px;
+            min-width: 190px;
+            min-height: 190px;
+            padding: 10px;
+        }
+        .margin_bot{
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-size: 18px;
+        }
+        footer{
+            text-align: center;
+        }
+        button{
+            padding: 10px;
+            background-color: #ff4940;
+            border-radius: 100px;
+            border: none;
+        }
+        .highlighted{
+            color: #5e00be;
+        }
+        .highlighted_red{
+            color: #ff0000;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_container">
+        <div class="title_container">
+            <h1 class="title">Hola, {{113271174__additional_field_19}}</h1> <!--Acá se modifica el titulo-->
+        </div>
+        <div class="info_container">
+            <div class="info_container_data">
+                <img src="https://i.postimg.cc/wTZ0PC85/error.png" alt="logo de una equis" class="img_small logo_cancelacion"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+                <p class="parrafo_cancelacion"> <!--Dentro de la etiqueta <p> se modifica el texto-->
+                    Hemos evidenciado que la sesion fotografica <span class="highlighted">   correspondiente a el
+                    aliado:</span> {{113271174__additional_field_18}} ha sido <span class="highlighted_red"> CANCELADA. </span> <br>
+                    <span class="highlighted"> Fecha cuando iba a realizar la sesíon:</span> {{fecha}} <br>
+                    <span class="highlighted"> Booking code:</span> {{113271174__code}} <br>
+                    <br>
+                    <!--en la etiqueta a dentro de las comillas del href se puede modificar el link del hipervinculo-->
+                    <button ><a href="https://drive.google.com/file/d/1QMaCNq7wL3LUzWoGUq-pAWGJbgaIBrSt/view?usp=sharing" target="_blank">De acuerdo a lo anterior, es necesario enviar las fotografias de tus productos,
+                        en el siguiente instructivo encontraras los estandares que las fotografias deben cumplir</a></button>
+                    <br>
+                    <br>
+                    <span class="highlighted">Cualquier duda comunicate con tu comercial:</span>
+                    {{113271174__client_email}}
+                </p>
+            </div>
+            <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+        </div>
+    </section>
+    <footer>
+        <img src="https://scontent.feyp1-1.fna.fbcdn.net/v/t1.0-9/123644967_1691797097691400_1151049548503549165_n.png?_nc_cat=108&ccb=3&_nc_sid=e3f864&_nc_ohc=6TzxAL0SHHsAX-8AAAu&_nc_ht=scontent.feyp1-1.fna&oh=1b6544c4f3b984878710f18ed4e11b5f&oe=6063F343" alt="Imagen de pie de pagina que dice si tienes rappi lo tienes todo" class="img_medium">
+    </footer>
+</body>
+</html>

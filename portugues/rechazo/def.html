@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <title>Aliado Rechazo 2</title>
+    <style>
+        .main_container{
+            grid-template-columns: 33vw 33vw 33vw;
+            font-family: 'PT Serif', serif;
+            font-weight: bold;
+        }
+        .title{
+            background-color: #ff4940;
+            font-family: 'PT Serif', serif;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 30px;
+            padding: 10px;
+        }
+        .info_container_data{
+            display: flex;
+        }
+        .img_small{
+            width: 200px;
+            height: 200px; 
+            min-width: 190px;
+            min-height: 190px;
+            padding: 10px;
+        }
+        .img_medium{
+            width: 500px;
+        }
+        .margin_bot{
+            margin-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        p{
+            font-size: 18px;
+        }
+        footer{
+            text-align: center;
+        }
+        button{
+            padding: 10px;
+            background-color: #ff4940;
+            border-radius: 100px;
+            border: none;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+        }
+        .highlighted{
+            color: #5e00be;
+        }
+        .highlighted_red{
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+    <section class="main_container">
+        <div class="title_container">
+            <h1 class="title">Hola, {{113271174__additional_field_19}}</h1> <!--Acá se modifica el titulo-->
+        </div>
+        <div class="info_container">
+            <div class="info_container_data">
+                <img src="https://i.postimg.cc/wTZ0PC85/error.png" alt="logo de una equis" class="img_small logo_cancelacion"> <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+                <p class="parrafo_cancelacion"> <!--Dentro de la etiqueta <p> se modifica el texto-->
+                    A sessão fotográfica, <span class="highlighted">relativa ao seu aliado</span> {{113271174__additional_field_19}}
+                    foi <span class="highlighted_red">CANCELADO</span> pelo aliado com um código de agenda: {{113271174__code}} <br>
+                    <span class="highlighted">Data em que a sessão seria realizada:</span> {{fecha}} <br>
+                </p>
+            </div>
+            <!--Acá se puede colocar el link en las comillas de la etiqueta src y se muestra el logo-->
+        </div>
+    </section>
+    <footer>
+        <img src="https://i.blogs.es/2b545d/rappi-1/1366_2000.jpg" class="img_medium">
+    </footer>
+</body>
+</html>
